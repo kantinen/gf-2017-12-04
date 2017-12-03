@@ -6,4 +6,4 @@ all: vedtaegter-haleanmodninger.svg
 	dot -Tsvg $< -o $@
 
 clean:
-	rm vedtaegter-haleanmodninger.svg
+	rm -f vedtaegter-haleanmodninger.svg
