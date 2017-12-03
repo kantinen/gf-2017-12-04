@@ -1,0 +1,43 @@
+digraph G {
+  p1[
+    shape=box,
+    href="https://github.com/kantinen/vedtaegter/pull/1",
+    label="Genskriv 2012-vedtægterne i LaTeX (#1)"
+  ];
+  p6[
+    shape=box,
+    href="https://github.com/kantinen/vedtaegter/pull/6",
+    label="Ændr vedtagsdato til den 4. december 2017 (#6)"
+  ];
+  p4[
+    shape=box,
+    href="https://github.com/kantinen/vedtaegter/pull/4",
+    label="Ret et par stavefejl (#4)"
+  ];
+  p2[
+    shape=box,
+    href="https://github.com/kantinen/vedtaegter/pull/2",
+    label="Brug A4 formattet og standard LaTeX margin (#2)"
+  ];
+  p3[
+    shape=box,
+    href="https://github.com/kantinen/vedtaegter/pull/3",
+    label="Angiv hvad det er for et dokument i hovedet, og samlet sideantal i foden (#3)"
+  ];
+  p7[
+    shape=box,
+    href="https://github.com/kantinen/vedtaegter/pull/7",
+    label="2017 Tiløjelser omkring Vedtægtsændringer (#7)"
+  ];
+  p8[
+    shape=box,
+    href="https://github.com/kantinen/vedtaegter/pull/8",
+    label="2017 Tiløjelser omkring Bestyrelsen (#8)"
+  ];
+  p1 -> p6;
+  p6 -> p4;
+  p6 -> p2;
+  p2 -> p3;
+  p6 -> p7;
+  p6 -> p8;
+}
