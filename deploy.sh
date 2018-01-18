@@ -9,9 +9,12 @@ make
 sum=$(sha256sum referat.pdf | cut -d' ' -f1)
 sed 's/^  `[0-9a-f]\{64\}`$/  `'$sum'`/' -i README.md
 
-git add README.md
-git commit -m 'Setting SHA256 sum before deploy'
-git push
+nlines=$(git status . --porcelain | wc -l)
+if [ ${nlines} -ne 0 ] ; then
+  git add README.md
+  git commit -m 'Setting SHA256 sum before deploy'
+  git push
+fi
 
 # Use -B to keep gh-pages at most one commit ahead of master.
 # This leads to the use of -f when pushing to gh-pages on remote.
