@@ -8,7 +8,7 @@ make clean
 make
 
 sum=$(sha256sum referat.pdf | cut -d' ' -f1)
-sed 's/^  `[0-9a-f]\{64\}`$/  `'$sum'`/' -i README.md
+sed 's/^    [0-9a-f]\{64\}$/    '$sum'/' -i README.md
 
 nlines=$(git status . --porcelain | wc -l)
 if [ ${nlines} -ne 0 ] ; then

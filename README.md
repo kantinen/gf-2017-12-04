@@ -4,7 +4,7 @@ En PDF-udgave af referatet er tilgængelig
 [her](https://kantinen.github.io/gf-2017-12-04/referat.pdf). Den har
 følgende SHA256 sum:
 
-  `bd698c2644ed5a64a9030fb91ba03e5aa7c3453b23e19eaaa5a93a89c5ac91c5`
+    bd698c2644ed5a64a9030fb91ba03e5aa7c3453b23e19eaaa5a93a89c5ac91c5
 
 Vedtægterne lever nu på vores GitHub:
 https://github.com/kantinen/vedtaegter
