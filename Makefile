@@ -1,9 +1,15 @@
 .PHONY: all clean
 
-all: vedtaegter-haleanmodninger.svg 
+produkter=vedtaegter-haleanmodninger.svg referat.pdf
+
+all: $(produkter)
 
 %.svg: %.dot
 	dot -Tsvg $< -o $@
 
+%.pdf: %.tex
+	./latexrun -o $@ $<
+
 clean:
-	rm -f vedtaegter-haleanmodninger.svg
+	rm -f $(produkter)
+	rm -rf latex.out
