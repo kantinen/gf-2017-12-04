@@ -1,5 +1,11 @@
 # Kantinen's Generalforsamling den 4. december 2017
 
+En PDF-udgave af referatet er tilgængelig
+[her](https://kantinen.github.io/gf-2017-12-04/referat.pdf). Den har
+følgende SHA256 sum:
+
+  `d8b03f57cba38b86b12fca1cfe8f391dcf57e3894f64a85a10f9e5cf7c5d9ba4`
+
 Vedtægterne lever nu på vores GitHub:
 https://github.com/kantinen/vedtaegter
 
