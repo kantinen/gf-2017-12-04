@@ -4,6 +4,7 @@ set -euo pipefail
 
 ./gitsync.sh
 
+make clean
 make
 
 sum=$(sha256sum referat.pdf | cut -d' ' -f1)
@@ -27,8 +28,6 @@ set +e
 
 cat | bash - <<EOF
 set -euo pipefail
-make clean
-make
 git add -f vedtaegter-haleanmodninger.svg
 git add -f referat.pdf
 git commit -S -m 'Deploy'
